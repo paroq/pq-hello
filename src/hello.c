@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <hello-lib.h>
 
 int main( int argc, char *argv[] )
 {
-	printf( "Hello, world!\n" );
+	message( );
 	return 0;
 }

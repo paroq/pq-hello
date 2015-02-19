@@ -1,1 +1,2 @@
 part: 'pq-gcc',           branch: '4.9.1'
+part: 'pq-hello-lib',     branch: '1.1'

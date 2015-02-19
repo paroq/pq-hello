@@ -5,11 +5,10 @@ hello_sources := \
 
 binaries := hello
 
-CFLAGS +=
-LDFLAGS += 
-CPPFLAGS += 
+LDFLAGS += -lhello-lib
 
 hello: $(hello_sources)
+	$(call show_vars,CFLAGS CPPFLAGS)
 	gcc $(CFLAGS) $(CPPFLAGS) -o $@ $^ $(LDFLAGS)
 
 build-stamp: $(binaries)
